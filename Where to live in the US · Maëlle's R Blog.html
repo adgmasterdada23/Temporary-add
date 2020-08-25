@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://masalmon.eu/2017/11/16/wheretoliveus/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .utterances {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .utterances-frame {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 1px;
+      min-width: 100%;
+      max-width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.72.0">
+
+  <title>Where to live in the US · Maëlle's R Blog</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="./Where to live in the US · Maëlle&#39;s R Blog_files/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="./Where to live in the US · Maëlle&#39;s R Blog_files/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://masalmon.eu/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="./Where to live in the US · Maëlle&#39;s R Blog_files/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="./Where to live in the US · Maëlle&#39;s R Blog_files/blackburn.css">
+
+  
+  <link rel="stylesheet" href="./Where to live in the US · Maëlle&#39;s R Blog_files/all.css">
+
+  
+  <link href="./Where to live in the US · Maëlle&#39;s R Blog_files/css" rel="stylesheet" type="text/css">
+
+  
+  <script src="./Where to live in the US · Maëlle&#39;s R Blog_files/MathJax.js.download"></script>
+
+ 
+  
+
+  
+
+  <link rel="shortcut icon" href="https://masalmon.eu/img/favicon.ico" type="image/x-icon">
+
+  
+    
+        <link rel="stylesheet" href="./Where to live in the US · Maëlle&#39;s R Blog_files/paper-button.css">
+    
+  
+    
+        <link rel="stylesheet" href="./Where to live in the US · Maëlle&#39;s R Blog_files/salmon.css">
+    
+  
+  
+    
+        <script src="./Where to live in the US · Maëlle&#39;s R Blog_files/display.js.download"></script>
+    
+  
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+<div id="layout">
+
+  
+<a href="https://masalmon.eu/2017/11/16/wheretoliveus/#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://masalmon.eu/">Maëlle Salmon</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/"><i class="fa fa-home fa-fw"></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/post/"><i class="far fa-sticky-note"></i> Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/talks/"><i class="fa fa-microphone fa-fw"></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/all/"><i class="fa fa-list fa-fw"></i>Content by date</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/tags/"><i class="fa fa-tags fa-fw"></i>Posts by tag</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/bio/"><i class="fa fa-id-card fa-fw"></i>Bio</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/papers/"><i class="fa fa-file fa-fw"></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://masalmon.eu/privacy/"><i class="fa fa-user-secret fa-fw"></i>Privacy policy</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+<li class="pure-menu-item">
+    </li>
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/ma_salmon" rel="me" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:maelle.salmon@yahoo.se" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maelle" rel="me" target="_blank"><i class="fab fa-github-square"></i> GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://keybase.io/maelle_salmon" rel="me" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
+    </li>
+    
+    
+        
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0002-2815-0399" target="_blank"><i class="fab fa-orcid"></i>ORCID</a>
+    </li>
+    
+    
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Maelle_Salmon" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>Licence: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a></small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>. <a href="https://github.com/maelle/simplymaelle">Source of the website</a>.</small>
+  </div>
+</div>
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Where to live in the US</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/11/16</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://masalmon.eu/tags/xkcd">xkcd</a>&nbsp;/
+    
+      <a class="post-taxonomy-tag" href="https://masalmon.eu/tags/weather">weather</a>&nbsp;/
+    
+      <a class="post-taxonomy-tag" href="https://masalmon.eu/tags/riem">riem</a>&nbsp;/
+    
+      <a class="post-taxonomy-tag" href="https://masalmon.eu/tags/weathermetrics">weathermetrics</a>&nbsp;/
+    
+      <a class="post-taxonomy-tag" href="https://masalmon.eu/tags/ggrepel">ggrepel</a>&nbsp;/
+    
+      <a class="post-taxonomy-tag" href="https://masalmon.eu/tags/kitsch-plot">kitsch plot</a>
+    
+  </div>
+  
+  
+
+
+  
+
+
+
+
+
+  
+
+
+    
+  <div>
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/maelle/simplymaelle/blob/master/content/post/2017-11-16-wheretoliveus.md" target="_blank">View source</a>&nbsp;
+
+
+
+</div>
+
+  <p>I was fascinated by this <a href="https://xkcd.com/1916/">xkcd comic</a> about where to live based on your temperature preferences. I also thought it’d be fun to try to make a similar one from my R session! Since I’m no meteorologist and was a bit unsure of how to define winter and summer, and of their relevance in countries like, say, India which has monsoon, I decided to focus on a single country located in one hemisphere only and big enough to offer some variety… the USA! So, dear American readers, where should you live based on your temperature preferences?</p>
+<h1 id="defining-data-sources">Defining data sources</h1>
+<h2 id="weather-data">Weather data</h2>
+<p>The data for the original xkcd graph comes from <a href="http://www.weatherbase.com/">weatherbase</a>. I changed sources because 1) I was not patient enough to wait for weatherbase to send me a custom dataset which I imagine is what xkcd author did and 2) I’m the creator of <a href="http://ropensci.github.io/riem/">a cool package accessing airport weather data</a> for the whole word including the US! My package is called “riem” like “R Iowa Environmental Mesonet” (the source of the data, a <a href="https://mesonet.agron.iastate.edu/request/download.phtml?network=IN__ASOS">fantastic website</a>) and “we laugh” in Catalan (at the time I wrote the package I was living in Barcelona and taking 4 hours of Catalan classes a week!). It’s a simple but good package which underwent <a href="https://github.com/ropensci/onboarding/issues/39">peer-review</a> at rOpenSci onboarding, thank you <a href="https://twitter.com/gbwanderson">Brooke</a>!</p>
+<p>I based my graph on data from the last winter and the last summer. I reckon that one should average over more years, but nothing important is at stake here, right?</p>
+<h2 id="cities-sample">Cities sample</h2>
+<p>My package has a function for downloading weather data for a given airport based on its ID. For instance Los Angeles airport is LAX. At that point I just needed a list of cities in the US with their airport code. Indeed with my package you can get all airport weather networks, one per US state, and all the stations within that network… this is a lot of airports with no way to automatically determine how big they are! And to get the city name since it’d be so hard to parse the airport name I’d have resorted to geocoding with <a href="https://github.com/ropensci/opencage">e.g. this package</a>. A bit complicated for a simple fun graph!</p>
+<p>So I went to the <a href="https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_the_United_States">Wikipedia page of the busiest airports in the US</a> and ended up getting <a href="https://www.bts.gov/content/passengers-boarded-top-50-us-airports">this dataset</a> from the US Department of Transportation (such a weird open data format by the way… I basically copy-pasted the first two columns in a spreadsheet!). This is not perfect, getting a list of major cities in every state would be more fair but hey reader I want you to live in a really big city so that I might know where it is.</p>
+<h2 id="ok-so-lets-get-the-data">Ok so let’s get the data</h2>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">us_airports <span style="color:#666">&lt;-</span> readr<span style="color:#666">::</span><span style="color:#06287e">read_csv</span>(<span style="color:#4070a0">"data/2017-11-16_wheretoliveus_airports.csv"</span>)
+knitr<span style="color:#666">::</span><span style="color:#06287e">kable</span>(us_airports[1<span style="color:#666">:</span><span style="color:#40a070">10</span>,])
+</code></pre></div><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Atlanta, GA (Hartsfield-Jackson Atlanta International)</td>
+<td align="left">ATL</td>
+</tr>
+<tr>
+<td align="left">Los Angeles, CA (Los Angeles International)</td>
+<td align="left">LAX</td>
+</tr>
+<tr>
+<td align="left">Chicago, IL (Chicago O’Hare International)</td>
+<td align="left">ORD</td>
+</tr>
+<tr>
+<td align="left">Dallas/Fort Worth, TX (Dallas/Fort Worth International)</td>
+<td align="left">DFW</td>
+</tr>
+<tr>
+<td align="left">New York, NY (John F. Kennedy International)</td>
+<td align="left">JFK</td>
+</tr>
+<tr>
+<td align="left">Denver, CO (Denver International)</td>
+<td align="left">DEN</td>
+</tr>
+<tr>
+<td align="left">San Francisco, CA (San Francisco International)</td>
+<td align="left">SFO</td>
+</tr>
+<tr>
+<td align="left">Charlotte, NC (Charlotte Douglas International)</td>
+<td align="left">CLT</td>
+</tr>
+<tr>
+<td align="left">Las Vegas, NV (McCarran International)</td>
+<td align="left">LAS</td>
+</tr>
+<tr>
+<td align="left">Phoenix, AZ (Phoenix Sky Harbor International)</td>
+<td align="left">PHX</td>
+</tr>
+</tbody>
+</table>
+<p>I first opened my table of 50 airports. Then, I made the call to the Iowa Environment Mesonet.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">summer_weather <span style="color:#666">&lt;-</span> purrr<span style="color:#666">::</span><span style="color:#06287e">map_df</span>(us_airports<span style="color:#666">$</span>Code, riem<span style="color:#666">::</span>riem_measures,
+                                date_start <span style="color:#666">=</span> <span style="color:#4070a0">"2017-06-01"</span>,
+                                date_end <span style="color:#666">=</span> <span style="color:#4070a0">"2017-08-31"</span>)
+winter_weather <span style="color:#666">&lt;-</span> purrr<span style="color:#666">::</span><span style="color:#06287e">map_df</span>(us_airports<span style="color:#666">$</span>Code, riem<span style="color:#666">::</span>riem_measures,
+                                date_start <span style="color:#666">=</span> <span style="color:#4070a0">"2016-12-01"</span>,
+                                date_end <span style="color:#666">=</span> <span style="color:#4070a0">"2017-02-28"</span>)
+</code></pre></div><p>We then remove the lines that will be useless for further computations (The xkcd graph uses average temperature in the winter and average Humidex in the summer which uses both temperature and <a href="https://en.wikipedia.org/wiki/Dew_point">dew point</a>).</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">
+summer_weather <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">filter</span>(summer_weather,
+                                <span style="color:#666">!</span><span style="color:#06287e">is.na</span>(tmpf), <span style="color:#666">!</span><span style="color:#06287e">is.na</span>(dwpf))
+
+winter_weather <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">filter</span>(winter_weather,
+                                <span style="color:#666">!</span><span style="color:#06287e">is.na</span>(tmpf))
+</code></pre></div><p>I quickly checked that there was “nearly no missing data” so I didn’t remove any station nor day but if I were doing this analysis for something serious I’d do more checks including the time difference between measures for instance. Note that I end up with 48 airports only, there was no measure for Honolulu, HI (Honolulu International), San Juan, PR (Luis Munoz Marin International). Too bad!</p>
+<h1 id="calculating-the-two-weather-values">Calculating the two weather values</h1>
+<p>I started by converting all temperatures to Celsius degrees because although I like you, American readers, Fahrenheit degrees do not mean anything to me which is problematic for checking results plausibility for instance. I was lazy and just used Brooke Anderson’s (yep the same Brooke who reviewed <code>riem</code> for rOpenSci) <a href="https://github.com/geanders/weathermetrics/"><code>weathermetrics</code> package</a>.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">summer_weather <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">mutate</span>(summer_weather,
+                                tmpc <span style="color:#666">=</span> weathermetrics<span style="color:#666">::</span><span style="color:#06287e">convert_temperature</span>(tmpf, 
+                                                                           old_metric <span style="color:#666">=</span> <span style="color:#4070a0">"f"</span>, new_metric <span style="color:#666">=</span> <span style="color:#4070a0">"c"</span>),
+                                dwpc <span style="color:#666">=</span> weathermetrics<span style="color:#666">::</span><span style="color:#06287e">convert_temperature</span>(dwpf, 
+                                                                           old_metric <span style="color:#666">=</span> <span style="color:#4070a0">"f"</span>, new_metric <span style="color:#666">=</span> <span style="color:#4070a0">"c"</span>)) 
+
+winter_weather <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">mutate</span>(winter_weather,
+                                tmpc <span style="color:#666">=</span> weathermetrics<span style="color:#666">::</span><span style="color:#06287e">convert_temperature</span>(tmpf, 
+                                                                           old_metric <span style="color:#666">=</span> <span style="color:#4070a0">"f"</span>, new_metric <span style="color:#666">=</span> <span style="color:#4070a0">"c"</span>))
+</code></pre></div><h2 id="summer-values">Summer values</h2>
+<p>Summer values are Humidex values. The author explained Humidex “combines heat and <a href="https://en.wikipedia.org/wiki/Dew_point">dew point</a>”. Once again I went to <a href="https://en.wikipedia.org/wiki/Humidex">Wikipedia</a> and found the formula. I’m not in a mood to fiddle with formula writing on the blog so please go there if you want to see it. There’s also a package with a <a href="https://www.rdocumentation.org/packages/comf/versions/0.1.7/topics/calcHumidity">function returning the Humidex</a>. I was feeling adventurous and therefore wrote my own function and checked the results with the numbers from Wikipedia. It was first wrong because I wrote a “+” instead of a “-”… checking one’s code is crucial.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">calculate_humidex <span style="color:#666">&lt;-</span> <span style="color:#06287e">function</span>(temp, dewpoint){
+  temp <span style="color:#666">+</span> <span style="color:#40a070">0.5555</span><span style="color:#666">*</span>(<span style="color:#40a070">6.11</span> <span style="color:#666">*</span><span style="color:#06287e">exp</span>(<span style="color:#40a070">5417.7530</span><span style="color:#666">*</span>(<span style="color:#40a070">1</span><span style="color:#666">/</span><span style="color:#40a070">273.16</span> <span style="color:#666">-</span> <span style="color:#40a070">1</span><span style="color:#666">/</span>(<span style="color:#40a070">273.15</span> <span style="color:#666">+</span> dewpoint))) <span style="color:#666">-</span> <span style="color:#40a070">10</span>)
+}
+
+<span style="color:#06287e">calculate_humidex</span>(<span style="color:#40a070">30</span>, <span style="color:#40a070">15</span>)
+</code></pre></div><pre><code>## [1] 33.969
+</code></pre><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#06287e">calculate_humidex</span>(<span style="color:#40a070">30</span>, <span style="color:#40a070">25</span>)
+</code></pre></div><pre><code>## [1] 42.33841
+</code></pre><p>And then calculating the summer Humidex values by station was quite straightforward…</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#06287e">library</span>(<span style="color:#4070a0">"magrittr"</span>)
+summer_weather <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">mutate</span>(summer_weather,
+                                humidex <span style="color:#666">=</span> <span style="color:#06287e">calculate_humidex</span>(tmpc, dwpc))
+summer_values <span style="color:#666">&lt;-</span> summer_weather <span style="color:#666">%&gt;%</span>
+  dplyr<span style="color:#666">::</span><span style="color:#06287e">group_by</span>(station) <span style="color:#666">%&gt;%</span>
+  dplyr<span style="color:#666">::</span><span style="color:#06287e">summarise</span>(summer_humidex <span style="color:#666">=</span> <span style="color:#06287e">mean</span>(humidex, na.rm <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">TRUE</span>))
+</code></pre></div><p>… as it was for winter temperatures.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">winter_values <span style="color:#666">&lt;-</span> winter_weather <span style="color:#666">%&gt;%</span>
+  dplyr<span style="color:#666">::</span><span style="color:#06287e">group_by</span>(station) <span style="color:#666">%&gt;%</span>
+  dplyr<span style="color:#666">::</span><span style="color:#06287e">summarise</span>(winter_tmpc <span style="color:#666">=</span> <span style="color:#06287e">mean</span>(tmpc, na.rm <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">TRUE</span>))
+</code></pre></div><h1 id="prepare-data-for-plotting">Prepare data for plotting</h1>
+<p>I first joined winter and summer values</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">climates <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">left_join</span>(winter_values, summer_values,
+                             by <span style="color:#666">=</span> <span style="color:#4070a0">"station"</span>)
+</code></pre></div><p>Then I re-added city airport names.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">climates <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">left_join</span>(climates, us_airports,
+                             by <span style="color:#666">=</span> <span style="color:#06287e">c</span>(<span style="color:#4070a0">"station"</span> <span style="color:#666">=</span> <span style="color:#4070a0">"Code"</span>))
+</code></pre></div><p>I only kept the city name.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#06287e">head</span>(climates<span style="color:#666">$</span>Name)
+</code></pre></div><pre><code>## [1] "Atlanta, GA (Hartsfield-Jackson Atlanta International)"              
+## [2] "Austin, TX (Austin - Bergstrom International)"                       
+## [3] "Nashville, TN (Nashville International)"                             
+## [4] "Boston, MA (Logan International)"                                    
+## [5] "Baltimore, MD (Baltimore/Washington International Thurgood Marshall)"
+## [6] "Cleveland, OH (Cleveland-Hopkins International)"
+</code></pre><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">climates <span style="color:#666">&lt;-</span> dplyr<span style="color:#666">::</span><span style="color:#06287e">mutate</span>(climates, 
+                          city <span style="color:#666">=</span> stringr<span style="color:#666">::</span><span style="color:#06287e">str_replace</span>(Name, <span style="color:#4070a0">" \\(.*"</span>, <span style="color:#4070a0">""</span>))
+<span style="color:#06287e">head</span>(climates<span style="color:#666">$</span>city)
+</code></pre></div><pre><code>## [1] "Atlanta, GA"   "Austin, TX"    "Nashville, TN" "Boston, MA"   
+## [5] "Baltimore, MD" "Cleveland, OH"
+</code></pre><h1 id="plotting">Plotting!</h1>
+<p>When imitating an xkcd graph, one should use the <code>xkcd</code> package! I had already done that <a href="https://masalmon.eu/2017/05/14/evergreenreviewgraph/">in this post</a>.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#06287e">library</span>(<span style="color:#4070a0">"xkcd"</span>)
+<span style="color:#06287e">library</span>(<span style="color:#4070a0">"ggplot2"</span>)
+<span style="color:#06287e">library</span>(<span style="color:#4070a0">"extrafont"</span>)
+<span style="color:#06287e">library</span>(<span style="color:#4070a0">"ggrepel"</span>)
+
+xrange <span style="color:#666">&lt;-</span> <span style="color:#06287e">range</span>(climates<span style="color:#666">$</span>summer_humidex)
+yrange <span style="color:#666">&lt;-</span> <span style="color:#06287e">range</span>(climates<span style="color:#666">$</span>winter_tmpc)
+
+<span style="color:#06287e">set.seed</span>(<span style="color:#40a070">42</span>)
+
+<span style="color:#06287e">ggplot</span>(climates,
+       <span style="color:#06287e">aes</span>(summer_humidex, winter_tmpc)) <span style="color:#666">+</span>
+  <span style="color:#06287e">geom_point</span>() <span style="color:#666">+</span>
+  <span style="color:#06287e">geom_text_repel</span>(<span style="color:#06287e">aes</span>(label <span style="color:#666">=</span> city),
+                   family <span style="color:#666">=</span> <span style="color:#4070a0">"xkcd"</span>, 
+                   max.iter <span style="color:#666">=</span> <span style="color:#40a070">50000</span>)<span style="color:#666">+</span>
+  <span style="color:#06287e">ggtitle</span>(<span style="color:#4070a0">"Where to live based on your temperature preferences"</span>,
+          subtitle <span style="color:#666">=</span> <span style="color:#4070a0">"Data from airports weather stations, 2016-2017"</span>) <span style="color:#666">+</span>
+  <span style="color:#06287e">xlab</span>(<span style="color:#4070a0">"Summer heat and humidity via Humidex"</span>)<span style="color:#666">+</span>
+  <span style="color:#06287e">ylab</span>(<span style="color:#4070a0">"Winter temperature in Celsius degrees"</span>) <span style="color:#666">+</span>
+  <span style="color:#06287e">xkcdaxis</span>(xrange <span style="color:#666">=</span> xrange,
+           yrange <span style="color:#666">=</span> yrange)<span style="color:#666">+</span>
+  <span style="color:#06287e">theme_xkcd</span>() <span style="color:#666">+</span>
+  <span style="color:#06287e">theme</span>(text <span style="color:#666">=</span> <span style="color:#06287e">element_text</span>(size <span style="color:#666">=</span> <span style="color:#40a070">16</span>, family <span style="color:#666">=</span> <span style="color:#4070a0">"xkcd"</span>))
+</code></pre></div><p><img src="./Where to live in the US · Maëlle&#39;s R Blog_files/unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10"></p>
+<p>So, which city seems attractive to you based on this plot? Or would you use different weather measures, e.g. do you care about rain?</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://masalmon.eu/2017/11/05/newborn-serie/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://masalmon.eu/2017/11/05/newborn-serie/">You beautiful, naïve, sophisticated newborn series</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://masalmon.eu/2017/12/05/badderb/">Names of b.....s badder than Taylor Swift, a class in women's studies?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://masalmon.eu/2017/12/05/badderb/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+</div>
+
+
+<div class="utterances" style="height: 438px;">
+    <iframe class="utterances-frame" title="Comments" scrolling="no" src="./Where to live in the US · Maëlle&#39;s R Blog_files/utterances.html"></iframe>
+  </div>
+
+</div>
+</div>
+<script src="./Where to live in the US · Maëlle&#39;s R Blog_files/ui.js.download"></script>
+<script src="./Where to live in the US · Maëlle&#39;s R Blog_files/menus.js.download"></script>
+
+
+
+
+
+
+
+
+
+</div></body></html>
